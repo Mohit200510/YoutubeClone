@@ -1,0 +1,19 @@
+Unit 5: Component Lifecycle (Class Components)
+ Introduction to Lifecycle Methods
+Definition: Lifecycle methods are special methods in class components that run at specific points: when a component is created, updated, or destroyed. Explanation: Think of it like a human life: Birth (Mounting), Growth (Updating), and Death (Unmounting). These methods allow you to perform actions like fetching data from an API when a component first appears or cleaning up timers when it disappears.
+
+Mounting Phase
+Definition: This phase happens when an instance of a component is being created and inserted into the DOM. 
+Explanation: * constructor(): Used for initializing state and binding handlers.
+render(): The only required method; it examines state/props and returns JSX.
+componentDidMount(): Runs after the component is put into the DOM.
+This is the perfect place for API calls or setting up subscriptions.
+
+Updating Phase
+Definition: This phase occurs when a component’s state or props change. Explanation: * shouldComponentUpdate(): A performance tool that lets you tell React to skip re-rendering if the data hasn't changed enough.
+
+componentDidUpdate(): Runs immediately after the update happens. Useful for performing DOM operations or making network requests based on the change.
+
+Unmounting Phase
+Definition: This phase occurs when a component is being removed from the DOM. 
+Explanation: * componentWillUnmount(): The "cleanup" method. Use this to cancel network requests, remove event listeners, or stop timers so they don't cause memory leaks.

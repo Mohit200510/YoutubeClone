@@ -1,0 +1,151 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+} */
+/* 
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#0f0f0f;
+    font-family:Roboto, Arial, sans-serif;
+} */
+
+/* LOGIN CARD */
+.login-container{
+    
+    margin: 50px auto;
+    
+    width:420px;
+
+    background:#181818;
+
+    border:1px solid #2a2a2a;
+    border-radius:12px;
+
+    padding:40px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,0.6);
+
+    text-align:center;
+}
+
+/* YOUTUBE LOGO */
+.login-box-youtube-logo{
+    width:130px;
+    margin-bottom:25px;
+}
+
+/* TITLE */
+.login-heading{
+    font-size:30px;
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+/* SUBTITLE */
+.login-subtitle{
+    color:#aaaaaa;
+    margin-bottom:30px;
+    font-size:14px;
+}
+
+/* INPUT FIELDS */
+.login-fields input[type="email"],
+.login-fields input[type="password"]{
+    width:100%;
+    height:52px;
+
+    margin-bottom:15px;
+
+    border:1px solid #333;
+    border-radius:8px;
+
+    padding:0 15px;
+
+    font-size:16px;
+
+    outline:none;
+
+    background:#121212;
+    color:#fff;
+}
+
+/* FOCUS */
+.login-fields input[type="email"]:focus,
+.login-fields input[type="password"]:focus{
+    border:1px solid #3ea6ff;
+    box-shadow:0 0 0 2px rgba(62,166,255,0.2);
+}
+
+/* CHECKBOX */
+.login-remember-box{
+    text-align:left;
+    margin-bottom:25px;
+}
+
+.login-remember-box label{
+    font-size:14px;
+    color:#aaa;
+    margin-left:5px;
+}
+
+/* BUTTON */
+.login-btn{
+    width:100%;
+    height:48px;
+
+    border:none;
+    border-radius:24px;
+
+    background:#ff0000;
+
+    color:white;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.login-btn button:hover{
+    background:#cc0000;
+}
+
+/* FOOTER */
+.login-box-footer{
+    margin-top:25px;
+    font-size:14px;
+}
+
+.login-box-footer span{
+    color:#aaa;
+}
+
+.login-box-footer a{
+    color:#3ea6ff;
+    text-decoration:none;
+    font-weight:500;
+    margin-left:5px;
+}
+
+.login-box-footer a:hover{
+    text-decoration:underline;
+}
+
+
+/* close login page icon */
+
+#close-login-page{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #fff;
+    font-size: 24px;
+
+}

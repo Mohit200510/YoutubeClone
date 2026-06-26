@@ -1,0 +1,139 @@
+
+
+/* MAIN CARD */
+.signup-container{
+    width:420px;
+
+    background:#181818;
+
+    border:1px solid #2a2a2a;
+    border-radius:12px;
+
+    padding:40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
+
+    text-align:center;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition: 0.2s all linear;
+}
+
+/* YOUTUBE LOGO */
+.signup-box-logo{
+    width:130px;
+    margin-bottom:20px;
+}
+
+/* TITLE */
+.signup-box-title{
+    font-size:28px;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+/* SUBTITLE */
+.signup-box-subtitle{
+    color:#aaa;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+/* INPUT FIELDS */
+.signup-Form input[type="email"],
+.signup-Form input[type="password"],
+.signup-Form input[type="text"]{
+    width:100%;
+    height:50px;
+
+    margin-bottom:15px;
+
+    border:1px solid #333;
+    border-radius:8px;
+
+    padding:0 15px;
+
+    font-size:15px;
+
+    outline:none;
+
+    background:#121212;
+    color:#fff;
+}
+
+/* FOCUS EFFECT */
+.signup-Form input:focus{
+    border:1px solid #3ea6ff;
+    box-shadow:0 0 0 2px rgba(62,166,255,0.2);
+}
+
+/* CHECKBOX SECTION */
+.signup-remember-box{
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.signup-remember-box label{
+    font-size:14px;
+    color:#aaa;
+    margin-left:5px;
+}
+
+/* BUTTON */
+.signup-btn{
+    width:100%;
+    height:48px;
+
+    border:none;
+    border-radius:24px;
+
+    background:#ff0000;
+
+    color:white;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.signup-btn:hover{
+    background:#cc0000;
+}
+
+/* FOOTER */
+.signup-footer{
+    margin-top:25px;
+    font-size:14px;
+}
+
+.signup-footer span{
+    color:#aaa;
+}
+
+.signup-footer a{
+    color:#3ea6ff;
+    text-decoration:none;
+    font-weight:500;
+    margin-left:5px;
+}
+
+.signup-footer a:hover{
+    text-decoration:underline;
+}
+
+/* close login page icon */
+
+#close-signup-page{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #fff;
+    font-size: 24px;
+
+}

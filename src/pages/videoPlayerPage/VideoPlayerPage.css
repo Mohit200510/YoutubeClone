@@ -1,0 +1,14 @@
+.video-player-container{
+    max-width: 96%;
+    margin: 0 auto;
+}
+
+.video-player-main {
+    position: relative;
+    top: 67px;
+}
+.video-player-whole{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
