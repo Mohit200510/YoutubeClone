@@ -1,9 +1,10 @@
 import VideoComponent from "./videocomponent/Video";
+import "./HomeVidoes.css"
 
 function HomeVideosShowcase(){
     return(
         
-        <div className="home-page-videos" style={{position: "relative", top: "128px" ,marginLeft: "95px" ,display: "flex" ,flexWrap: "wrap", rowGap: "35px"}}>
+        <div className="home-page-videos" >
             <VideoComponent />
            
         </div>

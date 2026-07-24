@@ -12,3 +12,12 @@
     display: flex;
     gap: 16px;
 }
+
+
+@media screen and (max-width:991px) {
+    .video-player-whole{
+        display: block;
+    }
+    
+    
+}

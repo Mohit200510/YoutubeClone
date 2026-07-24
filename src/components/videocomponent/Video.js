@@ -79,7 +79,7 @@ function VideoComponent(){
                 
 
                 <div   className="box-video">
-                    <video   loop muted width="100%" height="255px" poster={video.thumbnail}   onMouseEnter={(e) => console.log(e.target) }     >
+                    <video   loop muted width="100%" height="auto" poster={video.thumbnail}   onMouseEnter={(e) => console.log(e.target) }     >
                         <source src={video.videoUrl} type="video/mp4"></source>
                     </video>
                 </div>

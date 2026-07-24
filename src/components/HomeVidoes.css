@@ -1,0 +1,15 @@
+.home-page-videos{
+    position: relative;
+    top: 128px;
+    margin-left: 80px;
+    display: flex ;
+    flex-wrap: wrap;
+    row-gap: 35px
+}
+
+@media screen and (max-width:991px) {
+    .home-page-videos{
+        margin: 0 14px;
+        row-gap: 0px
+    }
+}

@@ -55,11 +55,16 @@ function PlayerPageVideosMedia(){
                                 <div className="vd-right-content">
 
                                     <h2>{video.title}</h2>
+                                    <div className='vd-right-repson-wrap-div'>
                                     <h3>{video.channelName}</h3>
+                                        <span className='vd-right-dot-mobile'> • </span>
+
                                     <div className="vd-right-detail">
+
                                         <h4> {video.views} views  </h4>
                                         <span className='vd-right-dot'> • </span>
-                                        <h5>  {video.createdDate} </h5>
+                                        <h5 className='vd-right-creation-date'>  {video.createdDate} </h5>
+                                    </div>
                                     </div>
 
 

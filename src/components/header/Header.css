@@ -65,6 +65,7 @@ header{
     border-right: none;
     color: #fff;
 }
+
 .fa-solid.fa-xmark{
     position: absolute;
     right: 64px;
@@ -167,12 +168,15 @@ header{
     right: 157px;
     bottom: 2px;
 }
+
 .youtube-header-div-three{
     position: relative;
 }
+
 .youtube-header-div-three-setting-icon:hover .youtube-header-div-three-setting-popup{
     display: block;
 }
+
 .youtube-header-div-two-microphone:hover .hover-test{
     display: block;
     
@@ -193,10 +197,12 @@ header{
     align-items: center;
     gap: 18px;
 }
+
 .youtube-header-div-three i{
     color: #fff;
     font-size: 20px;
 }
+
 .youtube-header-div-three-account{
     border: 1px solid #303030;
     display: flex;
@@ -205,6 +211,7 @@ header{
     border-radius: 77px;
     padding: 5px 15px;
 }
+
 .youtube-header-div-three-account i{
     color: #fff;
     font-size: 23px;
@@ -234,6 +241,7 @@ header{
     z-index: 2;
     overflow-y: auto;
 }
+
 .Search-Reslts-box::-webkit-scrollbar{
     display: none;
 }
@@ -244,8 +252,8 @@ header{
     align-items: center;
     gap: 23px;
     padding: 16px 12px;
-
 }
+
 .Search-Reslts-item:hover{
     background-color: #383838;
     border-radius: 9px;
@@ -261,15 +269,85 @@ header{
     letter-spacing: 0.9px;
     line-height: 1.2;
     overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .Search-Reslts-item i{
     font-size: 23px;
     color: #fff;
 }
-.video-title {
+.video-title{
   
+}
+
+
+/* media */
+
+
+@media screen and (max-width:991px) {
+    .youtube-header{
+        margin: 0 12px;
+        gap: 22px;
+    }
+
+    .user-name{
+        display: none;
+    }
+    .youtube-header-div-two{
+        width: 100%;
+    }
+    .youtube-header-div-two-search-bar{
+        width: 100%;
+    }
+
+    .youtube-header-div-two-search-bar #search{
+        width: 100%;
+        height: 38px;
+        padding-left: 12px;
+        padding-right: 0px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border: none;
+        border: 1px solid #303030;
+        border-right:1px solid #303030;
+        color: #fff;
+    }
+
+    .youtube-header-div-two-search-bar #search-icon-two{
+        position: absolute;
+        right: 14px;
+        width: max-content;
+        font-size: 18px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border: none;
+        background: none;
+    }
+
+    .youtube-header-div-three-account{
+        border: none;
+        padding: 0;
+    }
+    .searchWrapper{
+        width: 100%;
+    }
+
+    .youtube-header-div-one i{
+        display: none;
+    }
+
+    .youtube-header-div-two-search-bar{
+        /* display: none; */
+    }
+
+    .youtube-header-div-three-setting-icon{
+        display: none;
+    }
+    
+    .youtube-header-div-two-microphone{
+        display: none;
+    }
+    
 }

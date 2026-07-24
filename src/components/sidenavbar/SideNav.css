@@ -45,3 +45,11 @@ div#section-left-nav-list-item-two {
     border: 3px #f1f1f1 solid;
     border-radius: 4px;
 }
+
+
+@media screen and (max-width:991px) {
+    .section-left-nav{
+        display: none;
+    }
+    
+}

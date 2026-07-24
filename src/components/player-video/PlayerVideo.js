@@ -4,16 +4,28 @@ import logo from './youtube6.jpg';
 import { data, useParams } from 'react-router-dom';
 import { useState , useEffect } from 'react';
 import PlayerVideoSketon from './PlayerVideo-skelton';
+import LikeIcon from './LikeIcon';
+import DislikeIcon from './DislikeIcon';
 
 
 
 function PlayerVideoModule(){
 
+    const[video, setVideo] = useState(null);
+
+    const[liked,setliked]=useState(false);
+    const[disliked,setDisliked]=useState(false)
+
+    const[subscribed,setSubscribed]=useState(false)
+
+
+    
+    
+    
 
     const { id } = useParams();
-    console.log("parameter",id)
+    // console.log("parameter",id)
 
-    const [video, setVideo] = useState(null);
     
 
     useEffect(() =>{
@@ -23,7 +35,21 @@ function PlayerVideoModule(){
         .then((data) => setVideo(data))
         
     },[id])
-    // console.log("data founded",video)
+
+    const handleSubscription = ()=>{
+        if(subscribed){
+            setSubscribed(false)
+            console.log("worked unscsribe");
+            
+        }
+        else{
+            setSubscribed(true)
+            console.log("worked subscribed");
+
+        }
+    
+    }
+    
 
     
     
@@ -39,65 +65,67 @@ function PlayerVideoModule(){
 
               
 
-                    <div className="video-player-video">
-                        <video key={video.videoCollection} controls autoPlay loop  poster={video.thumbnail}>
-                        <source src={video.videoUrl} type="video/mp4"></source>
-                        </video>
+            <div className="video-player-video">
+                <video key={video.videoCollection} controls autoPlay loop  poster={video.thumbnail}>
+                <source src={video.videoUrl} type="video/mp4"></source>
+                </video>
+            </div>
+
+            <h2 className="video-player-title">{video.title}</h2>
+
+            <div className="video-player-options">
+                <div className="video-player-options-left">
+                    <img id="vd-chanel-icon" src={video.channelLogo}></img>
+                    <div className="vd-ch-name-subs">
+                        <h3>{video.channelName} <i className="fa-solid fa-circle-check"></i></h3>
+                        <p>1.38k subscribers</p>
+                    </div>
+                    <button className={subscribed? "subscribed" : ""} onClick={handleSubscription} type="button">
+                    <i id={subscribed? "bell" : ""}
+                    style={{display: subscribed? "inline" : "none"}}
+                    className="fa-regular fa-bell "></i>
+                    {subscribed? "": "Subscribe"}</button>
                     </div>
 
-                    <h2 className="video-player-title">{video.title}</h2>
-
-                    <div className="video-player-options">
-                        <div className="video-player-options-left">
-                            <img id="vd-chanel-icon" src={video.channelLogo}></img>
-                            <div className="vd-ch-name-subs">
-                                <h3>{video.channelName} <i class="fa-solid fa-circle-check"></i></h3>
-                                
-                                <p>1.38k subscribers</p>
-                            </div>
-                            <button type="button">Subscribe</button>
-                        </div>
-
-                        <div className="video-player-options-right">
+                <div className="video-player-options-right">
 
                             
-                                <div className="vd-like-dislike-box">
-                                    <div className="vd-like-dislike-box-likes">
-                                        <i className="fa-regular fa-thumbs-up"></i>
-                                        {/* <i style={{color: "#fff"}} class="fa-solid fa-thumbs-up"></i> */}
+                    <div className="vd-like-dislike-box" >
+                        <div className="vd-like-dislike-box-likes">
+
+                        <LikeIcon liked ={liked} setliked={setliked} setDisliked={setDisliked} ></LikeIcon>
                                         
-                                         <span>7.2k</span>
-                                    </div>
-                                <i className="fa-regular fa-thumbs-down"></i>
-                                </div>
-
-                                <div className="vd-share-box">
-                                    <i className="fa-solid fa-share"></i>
-                                    <span>Share</span>
-                                </div>
-
-                                <div class="vd-ask-box">
-                                    <i className="fa-regular fa-star"></i>
-                                     <span>Ask</span>
-                                </div>
-
-                                <div class="vd-save-box">
-                                    <i className="fa-regular fa-bookmark"></i>
-                                     <span>Save</span>
-
-                                </div>
-
-                                <div class="vd-more-box">
-                                    <i className="fa-solid fa-ellipsis"></i>
-                                </div>
-
-                           
+                                        
+                        <span>7.2k</span>
                         </div>
+
+                        <DislikeIcon disliked={disliked} setDisliked={setDisliked} setliked={setliked}></DislikeIcon>
                     </div>
 
-               
+                    <div className="vd-share-box">
+                        <i className="fa-solid fa-share"></i>
+                        <span>Share</span>
+                    </div>
 
+                    <div class="vd-ask-box">
+                        <i className="fa-regular fa-star"></i>
+                        <span>Ask</span>
+                    </div>
+
+                    <div class="vd-save-box">
+                        <i className="fa-regular fa-bookmark"></i>
+                        <span>Save</span>
+
+                    </div>
+
+                    <div class="vd-more-box">
+                        <i className="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                           
+                </div>
             </div>
+        </div>
         </>
     )
 }

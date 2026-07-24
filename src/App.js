@@ -50,6 +50,7 @@ function App() {
           },1000)
        
       },[])
+      
 
       console.log("data in app.js",multimedia)
 

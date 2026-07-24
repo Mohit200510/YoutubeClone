@@ -1,4 +1,6 @@
 
+
+
 .video-box {
     max-width: 31.5%;
     /* max-width: 450px; */
@@ -62,4 +64,18 @@
 
 .videoLink{
     text-decoration: none;
+}
+
+
+
+@media screen and (max-width:991px) {
+    .video-box{
+        max-width: 100%;
+    }
+    .video-desc{
+    gap: 12px;
+    margin-top: 10px;
+}
+
+    
 }

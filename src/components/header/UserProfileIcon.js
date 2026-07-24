@@ -10,7 +10,7 @@ function UserProfileIcon() {
 
   const {signedUser} = useContext(apiContext)
   return (
-    <div style={{ display: "flex", alignItems: "center" ,justifyContent: "center" ,borderRadius: "50%"  ,height:"34px", width: "34px"  ,background: "#00579C"}}>
+    <div  style={{ display: "flex", alignItems: "center" ,justifyContent: "center" ,borderRadius: "50%"  ,height:"34px", width: "34px"  ,background: "#00579C"}}>
         <span style={{fontSize: "18px"}}>{signedUser?.name?.charAt(0).toUpperCase()}</span>
     </div>
   )

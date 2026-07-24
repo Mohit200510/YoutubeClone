@@ -17,7 +17,7 @@ function Header(){
 
     const {apiData} =useContext(apiContext)
 
-      const navigate = useNavigate()
+    const navigate = useNavigate()
 
 
     const[searchValue,setSearchValue]=useState("");
@@ -56,21 +56,9 @@ function Header(){
    
     // 
 
-    // 
-
-    // 
 
 
    
-  
-
-  
-
-  
-
-
-
-
 
     
     
@@ -90,14 +78,17 @@ function Header(){
             }} src= {logo} width="100px" title="YouTube Home"></img>
         </div>
 
+        
+
         <div className="youtube-header-div-two">
+            
 
             <div className="youtube-header-div-two-search-bar">
                 
             
             <i className="fa-solid fa-magnifying-glass" id="hover-icon"></i>
 
-            <div className="">
+            <div className="searchWrapper">
             
             
             <input type="text" name="search" id="search" value={searchValue}
@@ -116,7 +107,7 @@ function Header(){
                 // console.log("box =", box);
 
               }}
-                placeholder="Search" class="hover"></input>
+                placeholder="Search" className="hover"></input>
 
                 {box ? <SearchBoxSujjestion searchSujjestions ={searchResults} searchvalue={searchValue} setSearchValue={setSearchValue} /> : null}
 
@@ -129,7 +120,9 @@ function Header(){
             </div>
             
 
-            <i className="fa-solid fa-magnifying-glass" id="search-icon-two"></i>
+            <div className="">
+                <i className="fa-solid fa-magnifying-glass" id="search-icon-two"></i>
+            </div>
 
             </div>
 
@@ -143,12 +136,14 @@ function Header(){
         </div>
 
 
-        <div class="youtube-header-div-three">
+        <div className="youtube-header-div-three">
+            {/* <i className="fa-solid fa-magnifying-glass"></i> */}
 
-            <div class="youtube-header-div-three-setting-icon">
-            <i className="fa-solid fa-ellipsis-vertical"></i>
-            <h5 className="youtube-header-div-three-setting-popup">Settings</h5>
-        </div>
+
+            <div className="youtube-header-div-three-setting-icon">
+                <i className="fa-solid fa-ellipsis-vertical"></i>
+                <h5 className="youtube-header-div-three-setting-popup">Settings</h5>
+            </div>
             
 
 
@@ -175,7 +170,7 @@ function Header(){
                 {/* <i style={{color:signedUser? "rgb(110 160 200)": "#fff"}} className="fa-regular fa-circle-user"></i> */}
                 {signedUser?<UserProfileIcon signedUser={signedUser}/>:<i style={{color:signedUser? "rgb(110 160 200)": "#fff"}} className="fa-regular fa-circle-user"></i> }
                 {/* <UserProfileIcon signedUser={signedUser}/> */}
-                <span>{signedUser ? `Hello, ${signedUser.name}` : "Sign In"}</span>
+                <span className="user-name">{signedUser ? `Hello, ${signedUser.name}` : "Sign In"}</span>
                 <ProfileBox display={display}/>
 
 
