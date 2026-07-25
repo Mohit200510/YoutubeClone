@@ -38,12 +38,12 @@ function SearchModule() {
               onInput={function(e){
                 storeValue(e)
             }}
-              onBlur={()=>{
-                setTimeout(() => {
-                setBox(false)
+            //   onBlur={()=>{
+            //     setTimeout(() => {
+            //     setBox(false)
                     
-                }, 300);
-              }}
+            //     }, 300);
+            //   }}
               onFocus={()=>{
                 setBox(true)
                 // console.log("box =", box);

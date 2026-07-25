@@ -149,3 +149,26 @@ body{
     font-size: 24px;
 
 }
+
+@media screen and (max-width:991px) {
+
+    .login-container {
+    margin: 86px auto;
+    width: 82%;
+    background: #181818;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    text-align: center;
+    }
+
+    .login-fields input[type="email"],
+    .login-fields input[type="password"]{
+    width: stretch;
+    }
+    .login-box-youtube-logo{
+        margin-bottom: 0;
+    }
+    
+}
