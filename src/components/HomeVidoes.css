@@ -10,6 +10,9 @@
 @media screen and (max-width:991px) {
     .home-page-videos{
         margin: 0 14px;
-        row-gap: 0px
+        row-gap: 0px;
+        top: 107px;
+
     }
+    
 }

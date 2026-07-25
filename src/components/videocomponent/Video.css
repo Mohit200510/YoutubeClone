@@ -80,6 +80,7 @@
     .normal-video-details-heading h2 {
     line-height: 20px;
     font-size: 14px;
+    font-weight: 700;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* Limit to 2 lines */
     -webkit-box-orient: vertical;
@@ -88,7 +89,7 @@
     }
     .normal-video-details-subheading span {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 22px;
     }
     .normal-video-details-info {
     font-size: 12px;
