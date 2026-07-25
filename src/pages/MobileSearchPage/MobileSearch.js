@@ -1,12 +1,20 @@
 import React from 'react'
 import SearchModule from '../../components/SearchModule/SearchModule'
 import "./MobileSearch.css"
+import { useNavigate,navigate } from 'react-router-dom'
 
 function MobileSearch() {
+
+    const navigate =useNavigate()
+
+    function goBack(){
+        navigate(-1)
+    }
+
   return (
     <div className='mob-search'>
         <div className='Mob-search-header'>
-            <div className='header-back-btn'>
+            <div onClick={goBack} className='header-back-btn'>
                 <i class="fa-solid fa-arrow-left"></i>
             </div>
 

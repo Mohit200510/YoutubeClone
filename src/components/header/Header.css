@@ -268,7 +268,7 @@ header{
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.9px;
-    line-height: 1.2;
+    line-height: 1.5;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -309,7 +309,7 @@ header{
         border-bottom-right-radius: 50px;
         border: 1px solid #303030;
         border-right:1px solid #303030;
-        width: 77vw;
+        width: 72vw;
     }
 
     .Search-Reslts-box {
@@ -325,9 +325,16 @@ header{
         border: none;
         padding: 0;
     }
+    .youtube-header-div-two-search-bar #search:focus{
+        padding-left: 16px; 
+    }
     .searchWrapper{
         width: 100%;
     }
+    .fa-solid.fa-xmark{
+       right: 5px;
+   
+}
     .search-icon-two{
         display: none;
     }
