@@ -170,5 +170,9 @@ body{
     .login-box-youtube-logo{
         margin-bottom: 0;
     }
+    #close-login-page {
+    left: 16px;
+    font-size: 22px;
+    }
     
 }
