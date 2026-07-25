@@ -29,7 +29,7 @@ function DislikeIcon({disliked,setDisliked,setliked}) {
      viewBox="0 0 24 24"
      fill={disliked? "#fff" : "none" }
      stroke="#fff"
-     stroke-width="2"
+     stroke-width="1.5"
      stroke-linecap="round"
      stroke-linejoin="round">
 
