@@ -266,7 +266,7 @@ header{
 .Search-Reslts-item span{
     color: #fff;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.9px;
     line-height: 1.5;
     overflow: hidden;
@@ -296,12 +296,6 @@ header{
     .user-name{
         display: none;
     }
-    /* .youtube-header-div-two{
-        width: 100%;
-    }
-    .youtube-header-div-two-search-bar{
-        width: 100%;
-    } */
 
     .youtube-header-div-two-search-bar #search{
         /* width: 100%; */
@@ -360,5 +354,13 @@ header{
     #hover-icon{
         display: none;
     }
-    
+      
 }
+
+@media screen and (min-width:992px) {
+    
+    #Mobile-Search-icon{
+        display: none;
+    }
+}
+
