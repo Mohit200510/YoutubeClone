@@ -1,6 +1,5 @@
 import "./Header.css"
 import logo from "../../assets/images/youtubelogo.png";
-import SearchBoxSujjestion from "../Searchbox";
 import { useContext, useEffect, useState } from "react";
 
 import { findByPlaceholderText } from "@testing-library/dom";
@@ -8,6 +7,8 @@ import { useNavigate,navigate } from "react-router-dom";
 import { apiContext } from "../../Context/ApiContext";
 import UserProfileIcon from "./UserProfileIcon";
 import ProfileBox from "./ProfileBox";
+import SearchModule from "../SearchModule/SearchModule";
+import { Link } from "react-router-dom";
 
 
 
@@ -15,34 +16,21 @@ import ProfileBox from "./ProfileBox";
 function Header(){
 
 
-    const {apiData} =useContext(apiContext)
+    // const {apiData} =useContext(apiContext)
 
     const navigate = useNavigate()
 
 
-    const[searchValue,setSearchValue]=useState("");
-    const[searchResults,SetSearchResults]=useState([]);
-    // const[emptyDataText,setEmptyDataText]=useState("");
-    const[box,setBox]=useState(false);
+    
     const[display,setDisplay]=useState("none");
     
 
-   const {signedUser,setSignedUser}=  useContext(apiContext)
+    const {signedUser,setSignedUser}=  useContext(apiContext)
 
     
     
 
-    function storeValue(e){
-        // console.log("taget value",e.target.value);
-        const value= (e.target.value.toLocaleLowerCase())
-        setSearchValue(value)
-        // console.log("orignal value",searchValue)
-
-        SetSearchResults(apiData.filter(video => video.title.toLocaleLowerCase().includes(value)));
-        // console.log("filter data is here",searchResults)
-        
-    }
-
+    
     
 
 
@@ -81,50 +69,11 @@ function Header(){
         
 
         <div className="youtube-header-div-two">
+
+            <SearchModule></SearchModule>
             
 
-            <div className="youtube-header-div-two-search-bar">
-                
             
-            <i className="fa-solid fa-magnifying-glass" id="hover-icon"></i>
-
-            <div className="searchWrapper">
-            
-            
-            <input type="text" name="search" id="search" value={searchValue}
-              onInput={function(e){
-                storeValue(e)
-            }}
-              onBlur={()=>{
-                setTimeout(() => {
-                setBox(false)
-                    
-                }, 300);
-            //    console.log("box =", box);
-              }}
-              onFocus={()=>{
-                setBox(true)
-                // console.log("box =", box);
-
-              }}
-                placeholder="Search" className="hover"></input>
-
-                {box ? <SearchBoxSujjestion searchSujjestions ={searchResults} searchvalue={searchValue} setSearchValue={setSearchValue} /> : null}
-
-            
-
-            <i onClick={()=>{
-                setSearchValue("")
-            }}  style={{display: searchValue.length >= 1 ? "block" :"none" }}  className="fa-solid fa-xmark"></i>
-
-            </div>
-            
-
-            <div className="">
-                <i className="fa-solid fa-magnifying-glass" id="search-icon-two"></i>
-            </div>
-
-            </div>
 
 
             <div className="youtube-header-div-two-microphone">
@@ -143,6 +92,12 @@ function Header(){
             <div className="youtube-header-div-three-setting-icon">
                 <i className="fa-solid fa-ellipsis-vertical"></i>
                 <h5 className="youtube-header-div-three-setting-popup">Settings</h5>
+            </div>
+
+            <div className="">
+                <Link to="/search">
+                <i className="fa-solid fa-magnifying-glass" id="Mobile-Search-icon"></i>
+                </Link>
             </div>
             
 

@@ -12,6 +12,7 @@ import SignUpBox from './components/SignupBox/SignUpBox';
 import { useLocation } from 'react-router-dom';
 import { apiContext } from './Context/ApiContext';
 import { Navigate,useNavigate } from 'react-router-dom';
+import MobileSearch from './pages/MobileSearchPage/MobileSearch';
 
 
 function App() {
@@ -52,7 +53,7 @@ function App() {
       },[])
       
 
-      console.log("data in app.js",multimedia)
+    //   console.log("data in app.js",multimedia)
 
 
 
@@ -67,7 +68,7 @@ function App() {
 
     
          {/* {location.pathname !== "/login" && <Header apiData= {multimedia} />} */}
-         {!["/login", "/signup"].includes(location.pathname) && (
+         {!["/login", "/signup", "/search"].includes(location.pathname) && (
          <Header />
          )}
 
@@ -81,6 +82,7 @@ function App() {
             <Route path='/watch/:id' element= {<VideoPlayerPageMain />}/>
             <Route path='/login' element= { signedUser? <Navigate to="/"/> : <LoginBox/>}/>
             <Route path='/signup' element= {<SignUpBox/>}/>
+            <Route path='/search' element = {<MobileSearch/>}/>
 
         </Routes>
 

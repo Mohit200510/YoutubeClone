@@ -1,0 +1,26 @@
+.mob-search{
+
+    margin: 8px 8px;
+
+}
+.Mob-search-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-mic i{
+    color: #fff;
+    background-color: #ffffff14;
+    border: 1px solid #303030;
+    line-height: 37px;
+    padding: 0 7px;
+    border-radius: 50%;
+    font-size: 21px;
+}
+
+.header-back-btn i{
+    color: #fff;
+    font-size: 22px;
+}

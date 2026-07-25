@@ -1,11 +1,9 @@
 import { useState } from "react";
-import searchIcon from "../assets/images/youtube1.png";
 import { Navigate, useNavigate } from "react-router-dom";
 
 
 
-function SearchBoxSujjestion({searchSujjestions,searchvalue,setSearchValue}){
-  console.log("seach valyue in seahc box is",searchvalue)
+function SearchResults({searchSujjestions,searchvalue,setSearchValue}){
 
   const navigate = useNavigate()
 
@@ -13,12 +11,8 @@ function SearchBoxSujjestion({searchSujjestions,searchvalue,setSearchValue}){
     const clickedId= e.currentTarget.dataset.id
     // console.log("searc restks clicked",clickedId)
     const inputValue =e.currentTarget.textContent;
-    console.log(inputValue);
     setSearchValue(inputValue)
-    
-    
-    navigate(`/watch/${clickedId}`)
-   
+    navigate(`/watch/${clickedId}`)  
   }
 
   
@@ -57,4 +51,4 @@ function SearchBoxSujjestion({searchSujjestions,searchvalue,setSearchValue}){
 }
 
 
-export default SearchBoxSujjestion;
+export default SearchResults;
