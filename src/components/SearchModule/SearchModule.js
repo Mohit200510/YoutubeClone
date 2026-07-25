@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import "../header/Header.css"
 
 import SearchResults from './SearchResults';
@@ -12,6 +12,8 @@ function SearchModule() {
     const[searchResults,SetSearchResults]=useState([]);
     const[box,setBox]=useState(false);
 
+    const inputRef = useRef(null)
+
     function storeValue(e){
         // console.log("taget value",e.target.value);
         const value= (e.target.value.toLocaleLowerCase())
@@ -19,8 +21,11 @@ function SearchModule() {
         // console.log("orignal value",searchValue)
         SetSearchResults(apiData.filter(video => video.title.toLocaleLowerCase().includes(value)));
         // console.log("filter data is here",searchResults)
-        
     }
+
+    useEffect(()=>{
+        inputRef.current?.focus();
+    },[])
 
 
   return (
@@ -35,6 +40,8 @@ function SearchModule() {
             
             
             <input type="text" name="search" id="search" value={searchValue}
+              ref={inputRef}
+
               onInput={function(e){
                 storeValue(e)
             }}

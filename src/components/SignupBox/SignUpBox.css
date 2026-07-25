@@ -143,7 +143,7 @@
 /* media  */
 
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:620px) {
     .signup-container{
     width: 83%;
     padding: 16px;
