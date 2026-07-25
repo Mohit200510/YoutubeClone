@@ -75,7 +75,24 @@
     .video-desc{
     gap: 12px;
     margin-top: 10px;
-}
+    }
+
+    .normal-video-details-heading h2 {
+    line-height: 20px;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    .normal-video-details-subheading span {
+    font-size: 12px;
+    line-height: 18px;
+    }
+    .normal-video-details-info {
+    font-size: 12px;
+    }
 
     
 }
