@@ -30,7 +30,7 @@ const SignUpBox = () => {
         console.log("form values",loginData);
 
         try{
-            const response = await fetch(URL,{
+             await fetch(URL,{
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(loginData)
@@ -51,7 +51,6 @@ const SignUpBox = () => {
                 navigate("/login")
                     setLoading(false)
             }, 2000);
-            console.log(response);
             
 
             
