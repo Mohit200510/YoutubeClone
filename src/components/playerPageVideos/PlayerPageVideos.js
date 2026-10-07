@@ -1,7 +1,5 @@
 import './PlayerPageVideos.css';
-import thumb from './yt-thumbnail-4.avif'
-import PlayerpageVideosTopp from './PlayerPageVideosTop';
-import { useNavigate, Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { apiContext } from '../../Context/ApiContext';
 import { useContext, useState } from 'react';
 
@@ -10,7 +8,6 @@ import { useContext, useState } from 'react';
 function PlayerPageVideosMedia(){
 
     const{apiData} =useContext(apiContext)
-    const[data,setData]=useState("none")
     
 
     const navigate = useNavigate();

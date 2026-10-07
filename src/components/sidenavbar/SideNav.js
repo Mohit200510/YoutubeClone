@@ -13,7 +13,7 @@ function SideNavBar(){
                 </div>
 
                 <div className="section-left-nav-list-item" id="section-left-nav-list-item-two">
-                    <img src={shortsIcon} width="40px"></img>
+                    <img src={shortsIcon} width="40px" alt="shorts"></img>
                     <h6>Shorts</h6>
                 </div>
 

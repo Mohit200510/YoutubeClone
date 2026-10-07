@@ -3,15 +3,15 @@ import { Routes,Route } from 'react-router-dom';
 import { useState,useEffect, useContext } from 'react';
 import HomePage from './pages/home/Home';
 import Header from './components/header/Header';
-import SideNavBar from './components/sidenavbar/SideNav';
-import TopNavBar from './components/topnavbar/TopNav';
-import HomeVideosShowcase from './components/HomeVidoes';
+// import SideNavBar from './components/sidenavbar/SideNav';
+// import TopNavBar from './components/topnavbar/TopNav';
+// import HomeVideosShowcase from './components/HomeVidoes';
 import VideoPlayerPageMain from './pages/videoPlayerPage/VideoPlayerPage';
 import LoginBox from './components/LoginBox/LoginBox';
 import SignUpBox from './components/SignupBox/SignUpBox';
 import { useLocation } from 'react-router-dom';
 import { apiContext } from './Context/ApiContext';
-import { Navigate,useNavigate } from 'react-router-dom';
+import {Navigate, useNavigate } from 'react-router-dom';
 import MobileSearch from './pages/MobileSearchPage/MobileSearch';
 
 
@@ -19,8 +19,8 @@ function App() {
 
   const location =useLocation()
   const[multimedia,setmultiemdia] = useState([]);
-  const[loading,setLoading]= useState(true);
-  const navigate =useNavigate()
+  // const[loading,setLoading]= useState(true);
+  // const navigate =useNavigate()
 
   const {signedUser} = useContext(apiContext)
 //   const[category,setCategory]= useState();
@@ -39,7 +39,7 @@ function App() {
   
       finally{
           // console.log(" data fetched")
-          setLoading(false)
+          // setLoading(false)
       }
       
       }

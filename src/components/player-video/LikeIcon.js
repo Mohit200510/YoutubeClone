@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react';
 import "./PlayerVideo.css"
 
 function LikeIcon({liked,setliked,setDisliked}) {

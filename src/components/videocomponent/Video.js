@@ -1,9 +1,7 @@
 import "./Video.css";
-import video1 from "../../assets/videos/youtube3.mp4";
 import { useContext, useEffect, useState } from "react";
 import SkeletonBox from "../Skeleton";
-import { data, Link, useNavigate } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { apiContext } from "../../Context/ApiContext";
 
 
@@ -11,7 +9,7 @@ import { apiContext } from "../../Context/ApiContext";
 
 function VideoComponent(){
 
-    const {category,setCategory} = useContext(apiContext)
+    const {category} = useContext(apiContext)
 
 
     // const {loading,apiData} =useContext(apiContext)
@@ -87,7 +85,7 @@ function VideoComponent(){
                 <div className="video-desc">
 
                 
-                    <img src={video.channelLogo}></img>
+                    <img src={video.channelLogo} alt="logo"></img>
                 
 
                     <div className="video-details">

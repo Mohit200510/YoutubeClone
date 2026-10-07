@@ -2,8 +2,7 @@ import "./Header.css"
 import logo from "../../assets/images/youtubelogo.png";
 import { useContext, useEffect, useState } from "react";
 
-import { findByPlaceholderText } from "@testing-library/dom";
-import { useNavigate,navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { apiContext } from "../../Context/ApiContext";
 import UserProfileIcon from "./UserProfileIcon";
 import ProfileBox from "./ProfileBox";
@@ -38,7 +37,7 @@ function Header(){
          const user = JSON.parse(localStorage.getItem("LoggedUser"))
     setSignedUser(user)
     // console.log("value in locals storage",signedUser);
-    },[])
+    },[setSignedUser])
    
     // console.log("value in locals storage",signedUser);
    
@@ -63,7 +62,7 @@ function Header(){
             <i className="fa-solid fa-bars"></i>
             <img onClick={()=>{
                 navigate("/")
-            }} src= {logo} width="100px" title="YouTube Home"></img>
+            }} src= {logo} width="100px" title="YouTube Home" alt="logo"></img>
         </div>
 
         

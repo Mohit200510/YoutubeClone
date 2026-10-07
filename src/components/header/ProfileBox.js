@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import "./ProfileBox.css";
 import UserProfileIcon from './UserProfileIcon';
 import { apiContext } from '../../Context/ApiContext';

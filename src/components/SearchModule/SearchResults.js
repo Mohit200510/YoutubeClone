@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import react from "react";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -34,7 +34,7 @@ function SearchResults({searchSujjestions,searchvalue,setSearchValue}){
               }}  className="Search-Reslts-item" id="Search-Reslts-item" data-id={sujjestion.videoCollection}>
                 <i class="fa-brands fa-sistrix"></i>
                 <span>{sujjestion.title}</span>
-                <img src={sujjestion.thumbnail}></img>
+                <img src={sujjestion.thumbnail} alt="thumbnail"></img>
               </div>
 
               )

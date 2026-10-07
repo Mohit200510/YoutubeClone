@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchModule from '../../components/SearchModule/SearchModule'
 import "./MobileSearch.css"
-import { useNavigate,navigate } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 
 function MobileSearch() {
 

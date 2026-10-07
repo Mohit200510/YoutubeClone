@@ -1,7 +1,5 @@
 import './PlayerVideo.css';
-import thumb from './yt-thumbnail-4.avif'
-import logo from './youtube6.jpg';
-import { data, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useState , useEffect } from 'react';
 import PlayerVideoSketon from './PlayerVideo-skelton';
 import LikeIcon from './LikeIcon';
@@ -75,7 +73,7 @@ function PlayerVideoModule(){
 
             <div className="video-player-options">
                 <div className="video-player-options-left">
-                    <img id="vd-chanel-icon" src={video.channelLogo}></img>
+                    <img id="vd-chanel-icon" src={video.channelLogo} alt='icon'></img>
                     <div className="vd-ch-name-subs">
                         <h3>{video.channelName} <i className="fa-solid fa-circle-check"></i></h3>
                         <p>1.38k subscribers</p>

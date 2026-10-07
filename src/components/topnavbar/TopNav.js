@@ -1,11 +1,10 @@
 import { useContext, useState } from "react";
 import "./TopNav.css"
 import { apiContext } from "../../Context/ApiContext";
-import { NavLink } from "react-router-dom";
 
 function TopNavBar(){
 
-    const {category,setCategory} = useContext(apiContext);
+    const {setCategory} = useContext(apiContext);
     const[navItem,setNavItem]= useState(0)
     
 
@@ -36,24 +35,24 @@ function TopNavBar(){
         <div className="youtube-top-categories-menu">
                     <ul onClick={CategoryClicked}>
 
-                        <li id={navItem == 0?"nav-active":""}  data-category="" data-item="0"><a href="">All</a></li>
-                        <li id={navItem == 1?"nav-active":""} data-category="Music" data-item= "1"><a href="">Music</a></li>
-                        <li id={navItem == 2?"nav-active":""} data-category="Movie trailers" data-item= "2"><a href="">Entertainment</a></li>
-                        <li id={navItem == 3?"nav-active":""} data-category="Movie trailers" data-item= "3"><a href="">Movie Trailers</a></li>
+                        <li id={navItem === 0?"nav-active":""}  data-category="" data-item="0"><a href="">All</a></li>
+                        <li id={navItem === 1?"nav-active":""} data-category="Music" data-item= "1">Music</li>
+                        <li id={navItem === 2?"nav-active":""} data-category="Movie trailers" data-item= "2">Entertainment</li>
+                        <li id={navItem === 3?"nav-active":""} data-category="Movie trailers" data-item= "3">Movie Trailers</li>
                         
-                        <li id={navItem == 4?"nav-active":""} data-category="Bhajan" data-item= "4"><a href="">Religious</a></li>
-                        <li id={navItem == 5?"nav-active":""} data-category="Hanuman Chalisa" data-item= "5"><a href="">Hanuman Chalisa</a></li>
-                        <li id={navItem == 6?"nav-active":""} data-category="Music" data-item= "6"><a href="">Star Studios</a></li>
+                        <li id={navItem === 4?"nav-active":""} data-category="Bhajan" data-item= "4">Religious</li>
+                        <li id={navItem === 5?"nav-active":""} data-category="Hanuman Chalisa" data-item= "5">Hanuman Chalisa</li>
+                        <li id={navItem === 6?"nav-active":""} data-category="Music" data-item= "6">Star Studios</li>
 
-                        <li id={navItem == 7?"nav-active":""} data-category="Bhajan" data-item= "7"><a href="">Spiritual</a></li>
-                        <li id={navItem == 8?"nav-active":""} data-category="Music" data-item= "8"><a href="">Songs</a></li>
-                        <li id={navItem == 9?"nav-active":""} data-category="Movie trailers" data-item= "9"><a href="">Masala Films</a></li>
-                        <li id={navItem == 10?"nav-active":""} data-category="Music" data-item= "10"><a href="">Indian pop music</a></li>
-                        <li id={navItem == 11?"nav-active":""} data-category="Bhajan" data-item= "11"><a href="">Spiritual</a></li>
-                        <li id={navItem == 12?"nav-active":""} data-category="Music" data-item= "12"><a href="">Star Studios</a></li>
-                        <li id={navItem == 13?"nav-active":""} data-category="Music" data-item= "13"><a href="">New to you</a></li>
-                        <li id={navItem == 14?"nav-active":""} data-category="Movie trailers" data-item= "14"><a href="">Thrillers</a></li>
-                        <li id={navItem == 15?"nav-active":""} data-category="Music" data-item= "15"><a href="">Mixes</a></li>
+                        <li id={navItem === 7?"nav-active":""} data-category="Bhajan" data-item= "7">Spiritual</li>
+                        <li id={navItem === 8?"nav-active":""} data-category="Music" data-item= "8">Songs</li>
+                        <li id={navItem === 9?"nav-active":""} data-category="Movie trailers" data-item= "9">Masala Films</li>
+                        <li id={navItem === 10?"nav-active":""} data-category="Music" data-item= "10">Indian pop music</li>
+                        <li id={navItem === 11?"nav-active":""} data-category="Bhajan" data-item= "11">Spiritual</li>
+                        <li id={navItem === 12?"nav-active":""} data-category="Music" data-item= "12">Star Studios</li>
+                        <li id={navItem === 13?"nav-active":""} data-category="Music" data-item= "13">New to you</li>
+                        <li id={navItem === 14?"nav-active":""} data-category="Movie trailers" data-item= "14">Thrillers</li>
+                        <li id={navItem === 15?"nav-active":""} data-category="Music" data-item= "15">Mixes</li>
                         {/* <i style={{ color: "#f1f1f1" , marginLeft: "6px"}}  className="fa-solid fa-angle-right"></i> */}
                         
                     </ul>

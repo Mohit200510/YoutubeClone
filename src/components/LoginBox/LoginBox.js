@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import "./LoginBox.css";
-import { useNavigate,Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ToastContainer,toast } from 'react-toastify';
 import { ClipLoader } from 'react-spinners'
 

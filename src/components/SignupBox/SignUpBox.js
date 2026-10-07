@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./SignUpBox.css"
-import { useNavigate,Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { ClipLoader } from 'react-spinners'
 import { ToastContainer,toast } from 'react-toastify'
 
@@ -13,7 +13,7 @@ const SignUpBox = () => {
     const navigatePrev =useNavigate();
     const navigate = useNavigate();
     const[Loading,setLoading]=useState(false)
-    const[positon,setPosition]=useState("")
+    
 
     const URL = "https://6a2e4176c9776ca6c0c47384.mockapi.io/youtube/users";
 
