@@ -8,6 +8,7 @@ import { apiContext } from "../../Context/ApiContext";
 
 
 
+
 function VideoComponent(){
 
     const {category,setCategory} = useContext(apiContext)
@@ -38,8 +39,7 @@ function VideoComponent(){
         },[category])
 
  
-        if(loading) return <SkeletonBox/>;  
-        
+        if(loading) return <SkeletonBox/>;
         
     
 

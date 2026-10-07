@@ -24,9 +24,9 @@ function SearchModule() {
     }
 
     useEffect(()=>{
-        inputRef.current?.focus();
+       inputRef.current?.focus();
     },[])
-
+ 
 
   return (
     <>

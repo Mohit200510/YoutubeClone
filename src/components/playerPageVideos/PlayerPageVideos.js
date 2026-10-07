@@ -46,7 +46,7 @@ function PlayerPageVideosMedia(){
 
                                 <div className="vd-right-picture">
 
-                                    <video poster={video.thumbnail} >
+                                    <video poster={video.thumbnail} preload='none' >
                                     <source src="multimedia/videos/youtube3.mp4" type="video/mp4"></source>
                                     </video>
 

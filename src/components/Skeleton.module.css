@@ -1,0 +1,44 @@
+
+.homeSkeleton{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin-top: 3px;
+    margin-left: 7px;
+    flex-wrap: wrap;
+}
+
+.sketonBox{
+    width: 32%;
+}
+.skeltonVideo{
+    width: 100%;  
+}
+
+.sketonBoxBottom{
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.textSkeletonDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.headingTextSketon{
+    width: 93%;
+}
+.decTextSkeleton{
+    width: 65%;
+}
+
+
+@media screen and (max-width:990px) {
+    .sketonBox{
+        width: 100%;
+    }
+    
+}
