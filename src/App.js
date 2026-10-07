@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes,Route } from 'react-router-dom';
-import { useState,useEffect, useContext } from 'react';
+import {  useContext } from 'react';
 import HomePage from './pages/home/Home';
 import Header from './components/header/Header';
 // import SideNavBar from './components/sidenavbar/SideNav';
@@ -26,31 +26,31 @@ function App() {
 //   const[category,setCategory]= useState();
 //   const[categoryType,setCategoryType]= useState("category=");
 
-  const fetchApi = async() =>{
+  // const fetchApi = async() =>{
       
-      try{
-          const response = await fetch(`https://6a2e4176c9776ca6c0c47384.mockapi.io/youtube/videos`);
-          const data = await response.json();
-          // setmultiemdia(data)
-      }
-      catch(err){
-          console.log(err)
-      }
+  //     try{
+  //         const response = await fetch(`https://6a2e4176c9776ca6c0c47384.mockapi.io/youtube/videos`);
+  //         const data = await response.json();
+          
+  //     }
+  //     catch(err){
+  //         console.log(err)
+  //     }
   
-      finally{
-          // console.log(" data fetched")
-          // setLoading(false)
-      }
+  //     finally{
+  //         // console.log(" data fetched")
+  //         // setLoading(false)
+  //     }
       
-      }
+  //     }
   
-      useEffect(()=>{
-          setTimeout(()=>{
-          fetchApi()
+  //     useEffect(()=>{
+  //         setTimeout(()=>{
+  //         fetchApi()
   
-          },1000)
+  //         },1000)
        
-      },[])
+  //     },[])
       
 
     //   console.log("data in app.js",multimedia)
