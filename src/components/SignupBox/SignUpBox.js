@@ -51,6 +51,8 @@ const SignUpBox = () => {
                 navigate("/login")
                     setLoading(false)
             }, 2000);
+            console.log(response);
+            
 
             
            

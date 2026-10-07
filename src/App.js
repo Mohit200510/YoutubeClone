@@ -11,14 +11,14 @@ import LoginBox from './components/LoginBox/LoginBox';
 import SignUpBox from './components/SignupBox/SignUpBox';
 import { useLocation } from 'react-router-dom';
 import { apiContext } from './Context/ApiContext';
-import {Navigate, useNavigate } from 'react-router-dom';
+import {Navigate} from 'react-router-dom';
 import MobileSearch from './pages/MobileSearchPage/MobileSearch';
 
 
 function App() {
 
   const location =useLocation()
-  const[multimedia,setmultiemdia] = useState([]);
+  // const[multimedia,setmultiemdia] = useState([]);
   // const[loading,setLoading]= useState(true);
   // const navigate =useNavigate()
 
@@ -31,7 +31,7 @@ function App() {
       try{
           const response = await fetch(`https://6a2e4176c9776ca6c0c47384.mockapi.io/youtube/videos`);
           const data = await response.json();
-          setmultiemdia(data)
+          // setmultiemdia(data)
       }
       catch(err){
           console.log(err)

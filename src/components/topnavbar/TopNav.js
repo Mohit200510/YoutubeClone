@@ -35,7 +35,7 @@ function TopNavBar(){
         <div className="youtube-top-categories-menu">
                     <ul onClick={CategoryClicked}>
 
-                        <li id={navItem === 0?"nav-active":""}  data-category="" data-item="0"><a href="">All</a></li>
+                        <li id={navItem === 0?"nav-active":""}  data-category="" data-item="0">All</li>
                         <li id={navItem === 1?"nav-active":""} data-category="Music" data-item= "1">Music</li>
                         <li id={navItem === 2?"nav-active":""} data-category="Movie trailers" data-item= "2">Entertainment</li>
                         <li id={navItem === 3?"nav-active":""} data-category="Movie trailers" data-item= "3">Movie Trailers</li>
