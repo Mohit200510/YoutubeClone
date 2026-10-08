@@ -3,13 +3,7 @@ import "./ProfileBox.css";
 import UserProfileIcon from './UserProfileIcon';
 import { apiContext } from '../../Context/ApiContext';
 import { useNavigate } from 'react-router-dom';
-// import styled from 'styled-components';
 
-// const  div =styled.div`
-// width= 50px;
-// height= 50px;
-
-// `
 
 function ProfileBox({display}) {
 

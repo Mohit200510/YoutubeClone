@@ -1,13 +1,13 @@
 .profile-box{
     position: fixed;
-    top: 57px;
+    top: 5px;
     right: 10px;
     /* width: 20%; */
     height:max-content ;
     background-color: #282828;
     color: #fff;
     border-radius: 8px;
-    padding: 18px 0px 3px 0px;
+        padding: 18px 16px 3px 16px;
 }
 
 .profile-box-header{
