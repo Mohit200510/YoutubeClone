@@ -1,9 +1,10 @@
 import './PlayerVideo.css';
 import { useParams } from 'react-router-dom';
 import { useState , useEffect } from 'react';
-import PlayerVideoSketon from './PlayerVideo-skelton';
+// import PlayerVideoSketon from './PlayerVideo-skelton';
 import LikeIcon from './LikeIcon';
 import DislikeIcon from './DislikeIcon';
+import LoadingScreen from './LoadingScreen';
 
 
 
@@ -26,6 +27,7 @@ function PlayerVideoModule(){
 
     
 
+   
     useEffect(() =>{
         
          fetch(`https://6a2e4176c9776ca6c0c47384.mockapi.io/youtube/videos/${id}`)
@@ -52,7 +54,7 @@ function PlayerVideoModule(){
     
     
   
-   if (!video) return <PlayerVideoSketon/>;
+   if (!video) return <LoadingScreen/>;
 
     return(
         <>

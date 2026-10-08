@@ -33,18 +33,17 @@
     padding: 7px 13px;
     border-radius: 8px;
     margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .youtube-top-categories-menu ul li:active{
     background: #717171;
  }
 
-.youtube-top-categories-menu ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-}
+
 /* #youtube-top-categories-menu-list-item-one {
     background-color: #fff;
     margin-left: 24px;
@@ -54,10 +53,6 @@
 } */
 #nav-active{
     background-color: #fff;
-    /* color: #111; */
-}
-#nav-active a{
-    /* background-color: #fff; */
     color: #111;
 }
 

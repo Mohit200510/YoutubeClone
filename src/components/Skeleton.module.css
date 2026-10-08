@@ -12,7 +12,8 @@
     width: 32%;
 }
 .skeltonVideo{
-    width: 100%;  
+    width: 100%; 
+     
 }
 
 .sketonBoxBottom{
@@ -37,8 +38,15 @@
 
 
 @media screen and (max-width:990px) {
+    .homeSkeleton{
+        margin-left: 0;
+        gap: 18px;
+    }
     .sketonBox{
         width: 100%;
     }
+    .sketonBoxBottom{
+        margin-top: 10px;
+}
     
 }
